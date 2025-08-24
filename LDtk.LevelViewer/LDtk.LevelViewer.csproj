@@ -14,4 +14,13 @@
         <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.4" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="atlas\SunnyLand_by_Ansimuz-extended.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Typical_2D_platformer_example.ldtk">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
