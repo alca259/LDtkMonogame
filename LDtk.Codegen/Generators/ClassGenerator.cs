@@ -62,7 +62,7 @@ public class ClassGenerator(LDtkFileFull ldtkFile, Options options) : BaseGenera
                 Line($"Identifier = \"{identifier}\",");
                 Line($"Uid = {entityDefinition.Uid},");
                 Line($"Size = new Vector2({entityDefinition.Width}f, {entityDefinition.Height}f),");
-                Line($"Pivot = new Vector2({entityDefinition.PivotX}f, {entityDefinition.PivotY}f),");
+                Line($"Pivot = new Vector2({entityDefinition.PivotX.ToString(CultureInfo.InvariantCulture)}f, {entityDefinition.PivotY.ToString(CultureInfo.InvariantCulture)}f),");
                 if (entityDefinition.TileRect != null)
                 {
                     GenTilesetRectangle("Tile", entityDefinition.TileRect);
